@@ -4,14 +4,28 @@
     public static void Main()
     {
 
-        Console.WriteLine("Benvenuto nella Easy Class 3E");
+       
+
+        Console.WriteLine("Inserisci il nome del cliente");
+
+        string nomeCliente = Console.ReadLine(); 
+
+        Console.WriteLine($"Benvenuto nella Easy Class 3E { nomeCliente}");
+
+        Console.WriteLine("Inserisci il tipo di spedizione");
+
+        string tipoConsegna = Console.ReadLine();
+
+        Console.WriteLine($"Inserisci il numero di pacchi aquistati");
+
+        int numeroPacchi = int.Parse(Console.ReadLine());
 
         int costoSpedizione = 5; // dichiarazione di una variabile intera costoSpedizione e inizializzazione a 5
         costoSpedizione = 10; // riassegnazione del valore della variabile costoSpedizione a 10
 
-        int numeroPacchi = 2;
+        
 
-        string tipoConsegna = "Standard"; // dichiarazione
+      
 
         int costoTotale = costoSpedizione * numeroPacchi;
 
