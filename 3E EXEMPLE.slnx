@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/doc/" />
   <Folder Name="/src/">
+    <Project Path="src/BlaisePascal.3E.EXEMPLE.console/BlaisePascal.3E.EXEMPLE.console.csproj" Id="540b926b-300b-4e65-9bca-243dc05e8963" />
     <Project Path="src/BlaisePascal.LessonExempleDomain/BlaisePascal.LessonExempleDomain.csproj" />
   </Folder>
   <Folder Name="/test/">
