@@ -1,4 +1,6 @@
-﻿public class Program // questa è una classe 
+﻿using BlaisePascal.LessonExempleDomain;
+
+public class Program // questa è una classe 
 {
     //metodo di entrata in esecuzione del codice
     public static void Main()
@@ -30,7 +32,9 @@
         int costoTotale = costoSpedizione * numeroPacchi;
 
         Console.WriteLine($"Il tipo di consegna selezionato è {tipoConsegna} e il prezzo totale è {costoTotale}.");
-        
+
+
+        Enemy nemico = new Enemy(); // creazione di un oggetto nemico della classe Enemy
     }
 
 }
