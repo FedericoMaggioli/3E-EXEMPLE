@@ -6,7 +6,7 @@ public class Program // questa è una classe
     public static void Main()
     {
 
-       
+       /*
 
         Console.WriteLine("Inserisci il nome del cliente");
 
@@ -32,9 +32,14 @@ public class Program // questa è una classe
         int costoTotale = costoSpedizione * numeroPacchi;
 
         Console.WriteLine($"Il tipo di consegna selezionato è {tipoConsegna} e il prezzo totale è {costoTotale}.");
+       */
 
 
-        Enemy nemico = new Enemy(); // creazione di un oggetto nemico della classe Enemy
+
+
+        Enemy enemy = new Enemy(); // creazione di un oggetto nemico della classe Enemy
+        enemy.Health = 1;
+        Console.WriteLine($"La salute del nemico è {enemy.Health}.");
     }
 
 }
