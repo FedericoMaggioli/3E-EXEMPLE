@@ -1,14 +1,34 @@
 ﻿namespace BlaisePascal.LessonExempleDomain
 {
-    /// <summary>
-    /// 
-    /// </summary>
+    
     public class Enemy
     {
         // private 
-        private int health; 
+        private int _health; 
 
-        private const int maxHealth = 100; // costante per la salute massima
+        public int Health 
+        {
+            get
+            {
+                return _health;
+            }
+            set
+            {
+                if(value < 0)
+                {
+                   _health = 0 ;
+               
+                }else if (value > 100)
+                
+                {
+                    _health = 100 ;
+               
+                }else {
+                    _health = value;
+                }
+            }
+
+        }
 
         // ho bisogno di un costruttore 
        
