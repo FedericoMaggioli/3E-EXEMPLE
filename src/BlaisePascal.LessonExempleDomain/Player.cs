@@ -27,6 +27,16 @@ namespace BlaisePascal.LessonExempleDomain
         public bool IsAlive { get; private set; }
         public int Gold { get; private set; }
 
+        public Player(string name)
+        {
+            Name = name;
+            Level = 1;
+            Experience = 0;
+            Health = 100;
+            MaxHealth = 100;
+            IsAlive = true;
+            Gold = 0;
+        }
         public Player(string name, int level, int experience, int health, int maxHealth, bool isAlive, int gold)
         {
             Name = name;

@@ -45,8 +45,8 @@ public class Program // questa è una classe
             Console.WriteLine("Hi, this is the Player project.");
             Console.WriteLine("");
             Console.WriteLine("Give me a name for your player:");
-            string name = Console.ReadLine();
-            int MaxHealth = 100;
+            string name = Console.ReadLine(); 
+            int MaxHealth = 100; 
             Player player1 = new Player(name, 1, 0, MaxHealth, MaxHealth, true, 0);
             Console.WriteLine($"Player: {player1.Name} ");
             Console.WriteLine($"Level: {player1.Level} ");
