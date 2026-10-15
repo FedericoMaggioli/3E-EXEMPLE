@@ -9,8 +9,22 @@ namespace BlaisePascal.LessonExempleDomain
         private int _odometerKm;
         private double _dailyRate;
         private double _fuelLevelPercentage;
+        private string _licensePlate;
+        public string LicensePlate
+        {
+            get { return _licensePlate; }
+            private set
+            {
+                //controllo sulla targa - non nulla, non vuota, lunghezza 7 caratteri deve avere 2 lettere 3 numeri e 2 lettere
+                if (string.IsNullOrWhiteSpace(value) || value.Length != 7)
+                    throw new ArgumentException($"value not allowed {nameof(LicensePlate)}: {value} ");
+                if (!char.IsLetter(value[0]) || !char.IsLetter(value[1]) || !char.IsDigit(value[2]) || !char.IsDigit(value[3]) || !char.IsDigit(value[4]) || !char.IsLetter(value[5]) || !char.IsLetter(value[6]))
+                    throw new ArgumentException($"value not allowed {nameof(LicensePlate)}: {value} ");
 
-        public string LicensePlate { get; private set; }
+                _licensePlate = value;
+
+            }
+        }
         public int OdometerKm
         {
             get
